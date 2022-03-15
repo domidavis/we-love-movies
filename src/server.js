@@ -13,12 +13,12 @@ router.get('/', cors(), (req, res) => {
 
 app.use('/', router);
 
-knex.migrate
-  .latest()
-  .then((migrations) => {
-    console.log("migrations", migrations);
-    app.listen(PORT, listener);
-  })
-  .catch(console.error);
+// knex.migrate
+//   .latest()
+//   .then((migrations) => {
+//     console.log("migrations", migrations);
+//     app.listen(PORT, listener);
+//   })
+//   .catch(console.error);
 
 module.exports = app
